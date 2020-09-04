@@ -448,7 +448,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3478127881512409951}
   m_HandleRect: {fileID: 3478127881512409948}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 0.9996446
   m_NumberOfSteps: 4
   m_OnValueChanged:
@@ -889,7 +889,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0.34106445, y: 8874}
+  m_AnchoredPosition: {x: -0.34106445, y: 9203}
   m_SizeDelta: {x: 0.6821289, y: 16866.832}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &3478127881173080413
@@ -947,11 +947,10 @@ MonoBehaviour:
     m_Alignment: 6
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'HVGHBASDFCGHBHCFXDZSRDCG HJJVCXDZSDXF VHBVCDXSDCVGB GVCDXESEXDCFVBG GVFCDXSZDC
-    VBNVCDXDC VBGVFCEDCFVGBHGTFRDERCFVGBVCXECFVGCFXC
+  m_Text: 'sBDDGDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
 
 '
 --- !u!224 &3478127881512409948
@@ -1037,9 +1036,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3478127881555073757}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2bb39d32d89cf342b0d6cf4496c9061, type: 3}
+  m_Script: {fileID: 11500000, guid: b88706f51016b4c448e7d734d41528fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theConsole: {fileID: 3478127881173080415}
+  mainInputField: {fileID: 3478127881555073759}
+  inputText: {fileID: 3478127880630023950}
+  myText: 
 --- !u!222 &3478127881555073745
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1158,7 +1161,7 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 3478127881555073758}
-  m_TextComponent: {fileID: 0}
+  m_TextComponent: {fileID: 3478127880630023950}
   m_Placeholder: {fileID: 3478127880457630651}
   m_ContentType: 0
   m_InputType: 0
