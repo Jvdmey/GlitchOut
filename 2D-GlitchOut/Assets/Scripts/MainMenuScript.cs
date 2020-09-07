@@ -6,9 +6,11 @@ using UnityEngine.UI;
 
 public class MainMenuScript : MonoBehaviour
 {
+    #region Variables
     public GameObject optionsEnable;
     public GameObject mainMenuEnable;
-
+    #endregion
+    #region Start & Quit
     public void StartGame()
     {
         SceneManager.LoadScene("Main");
@@ -19,6 +21,8 @@ public class MainMenuScript : MonoBehaviour
         Application.Quit();
     }
 
+    #endregion
+    #region OptionsActivation
     public void OptionsYes()
     {
         optionsEnable.SetActive(true);
@@ -30,4 +34,5 @@ public class MainMenuScript : MonoBehaviour
         optionsEnable.SetActive(false);
         mainMenuEnable.SetActive(true);
     }
+    #endregion
 }

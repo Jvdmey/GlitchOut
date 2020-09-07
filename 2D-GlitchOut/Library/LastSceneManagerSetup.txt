@@ -1,8 +1,12 @@
 sceneSetups:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - path: Assets/Scenes/Main.unity
 =======
 - path: Assets/Scenes/New Scene.unity
+>>>>>>> master
+=======
+- path: Assets/Scenes/MainInteractable.unity
 >>>>>>> master
   isLoaded: 1
   isActive: 1
