@@ -236,7 +236,7 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1121860885
+  m_SortingLayerID: 1495550765
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -305,7 +305,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 7
-      m_TileSpriteIndex: 7
+      m_TileSpriteIndex: 11
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -323,7 +323,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 6
-      m_TileSpriteIndex: 6
+      m_TileSpriteIndex: 10
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -403,22 +403,22 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: 7367953788349164516, guid: 59c50e94de763c443ae072e21501bea4,
-      type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 6081957304450960586, guid: 59c50e94de763c443ae072e21501bea4,
-      type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 5
     m_Data: {fileID: -7810614697725033043, guid: 59c50e94de763c443ae072e21501bea4,
       type: 3}
   - m_RefCount: 5
     m_Data: {fileID: 6396253085261672010, guid: 59c50e94de763c443ae072e21501bea4,
       type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 7367953788349164516, guid: 59c50e94de763c443ae072e21501bea4,
+      type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 6081957304450960586, guid: 59c50e94de763c443ae072e21501bea4,
+      type: 3}
   m_TileMatrixArray:
   - m_RefCount: 12
     m_Data:
@@ -1178,7 +1178,7 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -377333007
+  m_SortingLayerID: -1864626889
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -3750,7 +3750,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -262755835
+  m_SortingLayerID: -866075681
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: eb636769bf87196409072eb491c738be, type: 3}
