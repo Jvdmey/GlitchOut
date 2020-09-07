@@ -5,10 +5,16 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class TextAdventureTEST : MonoBehaviour
 {
-    public Text theConsole;
+
     public InputField mainInputField;
+ 
+    public Text theConsole;
     public Text inputText;
+   // public Text answerText;
+
     public string myText;
+    public string myConsoleText;
+  //  public string myAnswerText;
 
 
 
@@ -18,32 +24,46 @@ public class TextAdventureTEST : MonoBehaviour
     }
     void Update()
     {
-        
         BeginCheck();
 
-        //if (Input.GetKeyDown (KeyCode.Return))
+        //if ((answer.ToString() == mainInputField.text)
         //{
         //    inputText.text = "HELP";
-            
+
 
         //    Debug.Log("FEEDBACK");
         //}
     }
     public void BeginCheck()
     {
-        string answer = "Hello";
+        //string answer = "";
         myText = mainInputField.text;
         myText = inputText.text;
+        myConsoleText = theConsole.text;
+       // myAnswerText = answerText.text;
 
-        if (answer.ToString() == mainInputField.text)
+        if  (Input.GetKeyDown(KeyCode.Return) && myText == "Hello There")
         {
-            mainInputField.text = "HELP";
+            mainInputField.text = "";
+            theConsole.text = myConsoleText   + myText + "\n\n" + "General Kenobi" + "\n\n";
+        }
+        if (Input.GetKeyDown(KeyCode.Return) && myText != "Hello There")
+        {
+            mainInputField.text = "";
+            theConsole.text = myConsoleText  + myText + "\n\n" + "Learn your memes" + "\n\n";
+        }
 
 
-            Debug.Log("FEEDBACK");
+
+
+        // theConsole.text = string.Concat(myText += myConsoleText  );
+        // inputText =  theConsole;
+        //mainInputField.text = theConsole.text;
+
+        Debug.Log("FEEDBACK");
         }
     }
+    
 
 
-	}
 
