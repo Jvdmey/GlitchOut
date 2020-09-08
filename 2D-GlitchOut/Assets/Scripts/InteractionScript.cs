@@ -7,18 +7,19 @@ using UnityEngine.UI;
 public class InteractionScript : MonoBehaviour
 {
     bool colliderCheck;
+    public PickUpAbility pickup;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.collider.tag == "Player")
+        if (collision.tag == "Player")
         {
             colliderCheck = true;
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.collider.tag == "Player")
+        if (collision.tag == "Player")
         {
             colliderCheck = false;
         }
@@ -28,6 +29,7 @@ public class InteractionScript : MonoBehaviour
     {
         if (colliderCheck == true && Input.GetKeyDown(KeyCode.E))
         {
+            //pickup.GetComponent<PickUpAbility>().OnTriggerEnter2D(); //ERROR here
             Destroy(gameObject);
         }
     }
