@@ -3670,6 +3670,7 @@ GameObject:
   - component: {fileID: 1658060308}
   - component: {fileID: 1658060307}
   - component: {fileID: 1658060311}
+  - component: {fileID: 1658060312}
   m_Layer: 0
   m_Name: TempPlayer
   m_TagString: Untagged
@@ -3792,7 +3793,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.000000014901161, y: -0.1274761}
+  m_Offset: {x: 0.000000014901161, y: 0.02}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3803,5 +3804,24 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.88345027, y: 0.2497108}
+  m_Size: {x: 0.63, y: 0.88}
   m_EdgeRadius: 0
+--- !u!95 &1658060312
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658060306}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4808c9a8dfcbbb64b8e0dd1135f9d03c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
