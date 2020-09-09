@@ -7,7 +7,13 @@ using UnityEngine.UI;
 public class InteractionScript : MonoBehaviour
 {
     bool colliderCheck;
-    public PickUpAbility pickup;
+    private InventorySystem inventory; //Imported From Ties
+    public GameObject ItemButton;
+
+    private void Start()
+    {
+        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<InventorySystem>(); //Imported From Ties
+    }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -29,8 +35,16 @@ public class InteractionScript : MonoBehaviour
     {
         if (colliderCheck == true && Input.GetKeyDown(KeyCode.E))
         {
-            //pickup.GetComponent<PickUpAbility>().OnTriggerEnter2D(); //ERROR here
-            Destroy(gameObject);
+            for (int i = 0; i < inventory.slots.Length; i++)
+            {
+                if (inventory.isFull[i] == false)
+                {
+                    inventory.isFull[i] = true;
+                    Instantiate(ItemButton, inventory.slots[i].transform); //Imported From Ties
+                    Destroy(gameObject);
+                    break;
+                }
+            }
         }
     }
 }
