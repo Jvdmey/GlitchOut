@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
-#region Varaibles
+    #region Varaibles
+
+    public Animator animator;
+
 [Header("Input Settings:")]
 public float movementSpeed;
 public float energy;
@@ -29,6 +32,9 @@ private Rigidbody2D rb;
     void Update()
     {
         ProcessInput();
+
+        animator.SetFloat("Horizontal", Input.GetAxisRaw("Horizontal"));
+        animator.SetFloat("Vertical", Input.GetAxisRaw("Vertical"));
     }
 
     void FixedUpdate()
