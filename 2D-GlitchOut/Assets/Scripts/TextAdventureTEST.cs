@@ -55,15 +55,26 @@ public class TextAdventureTEST : MonoBehaviour
             theConsole.text = myConsoleText + "\n\n";
             //theConsole.text = myConsoleText +"\n\n"  + myText + "\n\n" + "General Kenobi" + "\n\n";
         }
-        if (Input.GetKeyDown(KeyCode.Return) && myText != "Hello There")
+        if (Input.GetKeyDown(KeyCode.Return) && myText != "Hello There" && myText != "Go to main")
         {
             //StartCoroutine("PlayText");
             StartCoroutine("PlayFail");
-           
+
             mainInputField.text = "";
             // theConsole.text =  "\n\n" + "Type an actual command" + "\n\n";
-            theConsole.text = myConsoleText + "\n\n" ;
+            theConsole.text = myConsoleText + "\n\n";
         }
+        if (Input.GetKeyDown(KeyCode.Return) && myText == "Go to main")
+        {
+
+            StartCoroutine("PlayText");
+            mainInputField.text = "";
+            theConsole.text = myConsoleText + "\n\n";
+            Invoke("goMenu", 3f);
+            //theConsole.text = myConsoleText +"\n\n"  + myText + "\n\n" + "General Kenobi" + "\n\n";
+        }
+      
+
         //myAnswerText + "\n\n" + 
 
 
@@ -75,6 +86,10 @@ public class TextAdventureTEST : MonoBehaviour
         //Debug.Log("FEEDBACK");
     }
 
+    void goMenu()
+    {
+        SceneManager.LoadScene("Main");
+    }
     IEnumerator PlayText()
     {
         foreach (char c in myText)
