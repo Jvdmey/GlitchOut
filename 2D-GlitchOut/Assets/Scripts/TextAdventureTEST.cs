@@ -14,7 +14,9 @@ public class TextAdventureTEST : MonoBehaviour
 
     public string myText;
     public string myConsoleText;
-     string myAnswerText;
+    string myAnswerText;
+
+    string[] Words;
 
 
 
@@ -52,7 +54,7 @@ public class TextAdventureTEST : MonoBehaviour
       
             StartCoroutine("PlayText");
             mainInputField.text = "";
-            theConsole.text = myConsoleText + "\n\n";
+            theConsole.text = myConsoleText + "\n\n" ;
             //theConsole.text = myConsoleText +"\n\n"  + myText + "\n\n" + "General Kenobi" + "\n\n";
         }
         if (Input.GetKeyDown(KeyCode.Return) && myText != "Hello There" && myText != "Go to main")
