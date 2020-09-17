@@ -14,16 +14,17 @@ public class TextAdventureTEST : MonoBehaviour
 
     public string myText;
     public string myConsoleText;
-  //  public string myAnswerText;
+     string myAnswerText;
 
 
 
     private void Start()
     {
-        
+       
     }
     void Update()
     {
+       // StartCoroutine("PlayText");
         BeginCheck();
 
         //if ((answer.ToString() == mainInputField.text)
@@ -36,23 +37,34 @@ public class TextAdventureTEST : MonoBehaviour
     }
     public void BeginCheck()
     {
-        //string answer = "";
         myText = mainInputField.text;
-        myText = inputText.text;
         myConsoleText = theConsole.text;
-       // myAnswerText = answerText.text;
+        myAnswerText = "\n\nType an actual command";
+        myText = inputText.text;
+        //string answer = "";
+
+
+
+        // myAnswerText = answerText.text;
 
         if  (Input.GetKeyDown(KeyCode.Return) && myText == "Hello There")
         {
+      
+            StartCoroutine("PlayText");
             mainInputField.text = "";
-            theConsole.text = myConsoleText   + myText + "\n\n" + "General Kenobi" + "\n\n";
+            theConsole.text = myConsoleText + "\n\n";
+            //theConsole.text = myConsoleText +"\n\n"  + myText + "\n\n" + "General Kenobi" + "\n\n";
         }
         if (Input.GetKeyDown(KeyCode.Return) && myText != "Hello There")
         {
+            //StartCoroutine("PlayText");
+            StartCoroutine("PlayFail");
+           
             mainInputField.text = "";
-            theConsole.text = myConsoleText  + myText + "\n\n" + "Learn your memes" + "\n\n";
+            // theConsole.text =  "\n\n" + "Type an actual command" + "\n\n";
+            theConsole.text = myConsoleText + "\n\n" ;
         }
-
+        //myAnswerText + "\n\n" + 
 
 
 
@@ -60,9 +72,40 @@ public class TextAdventureTEST : MonoBehaviour
         // inputText =  theConsole;
         //mainInputField.text = theConsole.text;
 
-        Debug.Log("FEEDBACK");
+        //Debug.Log("FEEDBACK");
+    }
+
+    IEnumerator PlayText()
+    {
+        foreach (char c in myText)
+        {
+            Debug.Log(c);
+        
+            yield return new WaitForSeconds(0.08f); 
+           
+            theConsole.text += c;
         }
     }
+    IEnumerator PlayFail()
+    {
+        foreach (char c in myText)
+        {
+            Debug.Log(c);
+
+            yield return new WaitForSeconds(0.08f);
+
+            theConsole.text += c;
+        }
+        foreach (char d in myAnswerText)
+        {
+            Debug.Log(d);
+
+            yield return new WaitForSeconds(0.03f);
+
+            theConsole.text += d;
+        }
+    }
+ }
     
 
 

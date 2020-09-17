@@ -17,7 +17,7 @@ public class TypewriterLike : MonoBehaviour
 
         PlayText();
         //Starts delay
-      //  StartCoroutine("PlayText");
+        StartCoroutine("PlayText");
     }
     IEnumerator PlayText()
     {

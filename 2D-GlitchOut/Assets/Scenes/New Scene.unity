@@ -520,14 +520,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5}
+  m_Color: {r: 0.27293822, g: 0.7075472, b: 0.1768868, a: 0.53333336}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 2f99502d977e90142a950c6261cbd218, type: 3}
     m_FontSize: 35
     m_FontStyle: 2
     m_BestFit: 0
@@ -581,14 +581,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.27293822, g: 0.7075472, b: 0.1768868, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 2f99502d977e90142a950c6261cbd218, type: 3}
     m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
@@ -737,8 +737,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.5, y: 4264.4}
-  m_SizeDelta: {x: 1918.667, y: 9063.713}
+  m_AnchoredPosition: {x: -0.5, y: 4274.3022}
+  m_SizeDelta: {x: 1918.667, y: 9043.908}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &3478127880851885682
 GameObject:
@@ -789,7 +789,7 @@ GameObject:
   - component: {fileID: 3478127881093110584}
   - component: {fileID: 3478127881093110585}
   m_Layer: 5
-  m_Name: 'Canvas '
+  m_Name: InGameConsole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -933,14 +933,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.27293822, g: 0.7075472, b: 0.1768868, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 2f99502d977e90142a950c6261cbd218, type: 3}
     m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
@@ -1086,6 +1086,7 @@ GameObject:
   - component: {fileID: 3478127881555073758}
   - component: {fileID: 3478127881555073759}
   - component: {fileID: 3478127881555073744}
+  - component: {fileID: 3478127881555073760}
   m_Layer: 5
   m_Name: InputField
   m_TagString: Untagged
@@ -1185,6 +1186,18 @@ MonoBehaviour:
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
+--- !u!114 &3478127881555073760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3478127881555073757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a12f80159d89dd64ba1757a455795f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3478127882029108678
 GameObject:
   m_ObjectHideFlags: 0
