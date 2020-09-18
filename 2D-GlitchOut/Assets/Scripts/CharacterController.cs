@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
-    #region Varaibles
+#region Variables
 
     public Animator animator;
 
