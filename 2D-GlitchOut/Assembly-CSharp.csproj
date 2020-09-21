@@ -73,6 +73,8 @@
     <Compile Include="Assets\Scripts\MainMenuScript.cs" />
     <Compile Include="Assets\Scripts\PickUpAbility.cs" />
     <Compile Include="Assets\Scripts\PlayerHpScript.cs" />
+    <Compile Include="Assets\Scripts\ProjectileScript.cs" />
+    <Compile Include="Assets\Scripts\RangedEnemyScript.cs" />
     <Compile Include="Assets\Scripts\TextAdventureTEST.cs" />
     <Compile Include="Assets\Scripts\TypewriterLike.cs" />
     <Reference Include="UnityEngine">
