@@ -4,13 +4,8 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
-<<<<<<< Updated upstream
-#region Variables
 
-    public Animator animator;
-=======
-#region Varaibles
->>>>>>> Stashed changes
+#region Variables
 
 [Header("Input Settings:")]
 public float movementSpeed;
@@ -37,9 +32,6 @@ public Animator animator;
     void Update()
     {
         ProcessInput();
-
-        animator.SetFloat("Horizontal", Input.GetAxisRaw("Horizontal"));
-        animator.SetFloat("Vertical", Input.GetAxisRaw("Vertical"));
     }
 
     void FixedUpdate()
@@ -70,11 +62,15 @@ public Animator animator;
             {
                 rb.velocity = new Vector2(movementDirection.x * movementSpeed * Time.deltaTime, 0);
                 lastMove = new Vector2( movementDirection.x, 0f);
+                animator.SetFloat("Horizontal", Input.GetAxisRaw("Horizontal"));
+                animator.SetFloat("Vertical", 0f);
             }
             else
             {
                 rb.velocity = new Vector2(0, movementDirection.y * movementSpeed * Time.deltaTime);
                 lastMove = new Vector2(0f, movementDirection.y);
+                animator.SetFloat("Vertical", Input.GetAxisRaw("Vertical"));
+                animator.SetFloat("Horizontal", 0f);
             }
         }
         else if(isMovingHorizontal)
@@ -82,16 +78,22 @@ public Animator animator;
             rb.velocity = new Vector2(movementDirection.x * movementSpeed * Time.deltaTime, 0);
             wasMovingVertical = false;
             lastMove = new Vector2( movementDirection.x, 0f);
+            animator.SetFloat("Horizontal", Input.GetAxisRaw("Horizontal"));
+            animator.SetFloat("Vertical", 0f);
         }
         else if(isMovingvertical)
         {
             rb.velocity = new Vector2(0, movementDirection.y * movementSpeed * Time.deltaTime);
             wasMovingVertical = true;
             lastMove = new Vector2(0f, movementDirection.y);
+            animator.SetFloat("Vertical", Input.GetAxisRaw("Vertical"));
+            animator.SetFloat("Horizontal", 0f);
         }
         else
         {
             rb.velocity = Vector2.zero;
+            animator.SetFloat("Horizontal", 0f);
+            animator.SetFloat("Vertical", 0f);
         }
 
         if(Input.GetKey(KeyCode.LeftShift) && energy > 0)

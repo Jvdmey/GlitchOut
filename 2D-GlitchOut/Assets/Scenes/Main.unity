@@ -1190,7 +1190,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7e5c666d16862b0459233aaaa1118de7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3721,11 +3721,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41e635914e1ce7d46a544267cdbfaec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 1658060312}
   movementSpeed: 90
   energy: 25
   decreaseSpeed: 2
   movementDirection: {x: 0, y: 0}
+  animator: {fileID: 1658060312}
 --- !u!50 &1658060308
 Rigidbody2D:
   serializedVersion: 4
@@ -3826,7 +3826,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.000000014901161, y: 0.02}
+  m_Offset: {x: -0.000000007450581, y: -0.30103156}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3837,7 +3837,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.63, y: 0.88}
+  m_Size: {x: 0.4796068, y: 0.15695584}
   m_EdgeRadius: 0
 --- !u!95 &1658060312
 Animator:
