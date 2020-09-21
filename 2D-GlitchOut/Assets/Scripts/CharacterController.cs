@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
+<<<<<<< Updated upstream
 #region Variables
 
     public Animator animator;
+=======
+#region Varaibles
+>>>>>>> Stashed changes
 
 [Header("Input Settings:")]
 public float movementSpeed;
@@ -20,6 +24,7 @@ public Vector2 movementDirection;
 [Space]
 [Header("References:")]
 private Rigidbody2D rb;
+public Animator animator;
 
 #endregion
 
