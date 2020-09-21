@@ -33,6 +33,14 @@ public class EnemyFollow : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Player")
+        {
+            PlayerHpScript.hitPoints -= 5;
+        }
+    }
+
     void Update()
     {
         if (playerCheck == true)

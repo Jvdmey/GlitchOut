@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6591867972260980746}
   - component: {fileID: 455878393379050821}
   m_Layer: 0
-  m_Name: PickUp
+  m_Name: PickUpTemplate
   m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -149,3 +149,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemButton: {fileID: 382057666287312625}
+  pickupText: {fileID: 9180965032333362889, guid: 7349c8af1a377384fad4a178c7f0ef3d,
+    type: 3}
