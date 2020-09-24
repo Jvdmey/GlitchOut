@@ -18,4 +18,8 @@ public class PlayerBullet : MonoBehaviour
     {
         Destroy(gameObject, lifeTime);
     }
+
+
+
+
 }
