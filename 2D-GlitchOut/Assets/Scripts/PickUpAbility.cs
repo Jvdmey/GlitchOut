@@ -24,7 +24,7 @@ public class PickUpAbility : MonoBehaviour
                 {
                     //item word geadd naar de inventory
                     inventory.isFull[i] = true;
-                    Instantiate(ItemButton, inventory.slots[i].transform);
+                    Instantiate(ItemButton, inventory.slots[i].transform, false);
                     Destroy(gameObject);
                     break;
                 }
