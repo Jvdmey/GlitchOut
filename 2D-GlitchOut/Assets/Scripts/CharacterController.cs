@@ -15,6 +15,7 @@ public float decreaseSpeed;
 [Space]
 [Header("Character statistics:")]
 public Vector2 movementDirection;
+bool running;
 
 [Space]
 [Header("References:")]
@@ -43,6 +44,15 @@ public Animator animator;
     void FixedUpdate()
     {
         Move();
+
+        if(energy <= 25 && !running)
+        {
+            energy += 0.2f * Time.deltaTime;
+        }
+        else if(energy >= 25)
+        {
+            energy = 25;
+        }
     }
 
     void ProcessInput()
@@ -60,6 +70,7 @@ public Animator animator;
         bool wasMovingVertical = false;
 
         Vector2 lastMove;
+        running = false;
         
 
         if(isMovingHorizontal && isMovingvertical)
@@ -107,11 +118,13 @@ public Animator animator;
             energy -= decreaseSpeed * Time.deltaTime;
 
             energy = Mathf.Max(0, energy);
+            running = true;
 
             movementSpeed = 150;
         }
         else
         {
+            running = false;
             movementSpeed = 90;
         }
     }
