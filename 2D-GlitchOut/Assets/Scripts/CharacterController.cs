@@ -115,5 +115,18 @@ public Animator animator;
             movementSpeed = 90;
         }
     }
-#endregion
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Enemy")
+        {
+            
+        }
+
+        if (collision.collider.tag == "RangedEnemy")
+        {
+
+        }
+    }
+    #endregion
 }
