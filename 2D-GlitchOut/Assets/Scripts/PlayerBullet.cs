@@ -6,7 +6,7 @@ public class PlayerBullet : MonoBehaviour
 {
 
     public float speed = 20f;
-    public float lifeTime = 3f;
+    public float lifeTime = 2f;
     public Rigidbody2D rb;
 
     void Start()
@@ -19,6 +19,17 @@ public class PlayerBullet : MonoBehaviour
         Destroy(gameObject, lifeTime);
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+
+
+        if (collision.collider.tag == "Enemy")
+        {
+            Destroy(gameObject);
+        }
+
+
+    }
 
 
 

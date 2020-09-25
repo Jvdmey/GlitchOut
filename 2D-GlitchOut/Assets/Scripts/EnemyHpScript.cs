@@ -21,8 +21,9 @@ public class EnemyHpScript : MonoBehaviour
     {
 
 
-        if (collision.collider.tag == "Player")
+        if (collision.collider.tag == "Bullet")
         {
+            Debug.Log("HIT");
             hitPoints -= 25;
             hpBar.transform.localScale = new Vector3(hitPoints / 100, hpBar.transform.localScale.y, hpBar.transform.localScale.z);
         }
